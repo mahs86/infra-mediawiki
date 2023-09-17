@@ -38,7 +38,7 @@
 3. This deployment is using password authentication. In case you plan on using SSH keys, you need to edit line 67 to 74 on \modules\virtual_machine\main.tf and uncomment line 74 . I am using Password authentication to demonstrate how data block can be used to securely fetch username and password from keyvault. We can use [File function](https://www.terraform.io/language/functions/file "File Terraform") to specify our private key location.
 4. We are using Terraform modules and variables to ensure this code is scalable. Before you start the deployment you need to update the required values in ***"dev"*** file under terraform-resources folder. If you aren't sure about the expected values. You can hover your mouse on the value to find out the description. Reference image below :
 
-![](hover.png)
+![](Capture.png)
 
 5. I have used conditionals in the terraform variables file to ensure we are performing error handling. You can edit or modify these conditionals if you have any specific custom requirements.
 5. **Install_Loop.yaml** file contains the list of packages which needs to be installed. If you are planning to install anything additional. Just append the list and loop will take care of the setup.
